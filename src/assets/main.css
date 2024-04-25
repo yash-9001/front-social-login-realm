@@ -1,0 +1,38 @@
+*{
+  /* color: white ; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background-color: #222;
+  color: white;
+}
+form{
+  width: 400px;
+}
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+h1{
+  text-shadow: 2px 5px 4px rgba(0, 0, 0, 1);
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+.right-nav li{
+  margin: 0px 10px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
