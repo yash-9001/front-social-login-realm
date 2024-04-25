@@ -17,7 +17,7 @@ app.use(cors());
 app.use(bodyParser.json())
 app.use(express.json())
 
-mongoose.connect('mongodb+srv://realmm:realmmPassword@atlascluster.cinwufg.mongodb.net/userData'
+mongoose.connect(''
 ).then(() => {
     console.log("Connected to MongoDB Atlas");
 }).catch((err) => {
@@ -102,10 +102,10 @@ app.delete('/usersData', async (req, res) => {
 
 
 const BASE_URL = `http://localhost:5500`;
-const GOOGLE_CLIENT_ID = '932506994363-drmn01grg6fkrsjm2d84ngoq360h8om6.apps.googleusercontent.com';
+const GOOGLE_CLIENT_ID = '';
 console.log(GOOGLE_CLIENT_ID);
-const GOOGLE_CLIENT_SECRET = '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';
-const GOOGLE_PROJECT_ID = 'project1-420703';
+const GOOGLE_CLIENT_SECRET = '';
+const GOOGLE_PROJECT_ID = '';
 
 const oauthConfig = {
   client_id: GOOGLE_CLIENT_ID,
@@ -133,7 +133,7 @@ const oauth2Client = new OAuth2(
 
 
 const realmApp = new App({
-  id: 'users-ekiix',
+  id: '',
 });
 
 app.get("/auth/google", function (req, res) {
@@ -174,8 +174,8 @@ app.get("/auth/google/callback", function (req, res, errorHandler) {
 
 
 
-const FACEBOOK_APP_ID = '1148896139479819';
-const FACEBOOK_APP_SECRET = '53d454b82431b85d02201e70a40b9037'
+const FACEBOOK_APP_ID = '';
+const FACEBOOK_APP_SECRET = ''
 
 app.get('/auth/facebook', (req, res) => {
   const BASE_URL = `http://localhost:5500`;
@@ -224,10 +224,6 @@ app.get('/auth/facebook/callback', async (req, res) => {
 });
 
 
-// import OAuth from 'oauth';
-// const TWITTER_CLIENT_ID = 'Z2NNQnB6UGNRMmRaelI5TE1xU1M6MTpjaQ';
-// const TWITTER_CLIENT_SECRET = 'cGtl__X2R_oq65q9XCki-Nn9QCneVI9Vp3tYIgemnt1vjHXsC_';
-// const TWITTER_REDIRECT_URI = 'http://localhost:5500/auth/twitter/callback';
 
 // const oauth = new OAuth.OAuth(
 //   'https://api.twitter.com/oauth/request_token',
